@@ -1,5 +1,5 @@
 const axios = require('axios');
-const { Client } = require('discord.js-selfbot-dmallfriends-v13');
+const { Client } = require('discord.js-dmallfriend-v11');
 const client = new Client({ checkUpdate: false });
 
 const token = require('./config.json').token;
@@ -20,7 +20,7 @@ client.on('ready', async (client) => {
                 console.log(`${r[i].user.username} : DM ÉCHOUÉ`)
             })
         await setTimeout(async function () {
-        }, 100)
+        }, 650)
     }
     console.log("DM TERMINÉ")
 }).login(token);
